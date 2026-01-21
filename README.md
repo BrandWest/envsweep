@@ -33,6 +33,23 @@ python get_env_vars.py --help
 
 ## Usage
 
+## Command Line Options
+
+| Option | Description |
+|--------|-------------|
+| `-k, --kubeconfig` | Path to kubeconfig file |
+| `-c, --context` | Kubernetes context to use |
+| `-n, --namespace` | Target namespaces (space-separated) |
+| `-x, --exclude-namespace` | Namespaces to exclude |
+| `-o, --output` | Output directory (default: `env_vars_output`) |
+| `--consolidated` | One file per namespace instead of per-pod |
+| `-v, --verbose` | Increase verbosity (`-v` for INFO, `-vv` for DEBUG) |
+| `-q, --quiet` | Suppress output except errors |
+| `--no-color` | Disable colored output |
+| `--test` | Auto-increment output folder name |
+| `--shell-export` | Generate shell-style export files |
+| `-d, --docker` | Use Docker containers instead of Kubernetes |
+
 ### Kubernetes Mode (default)
 
 Extract from all namespaces:
@@ -83,23 +100,6 @@ Test mode (auto-increments output folder name):
 ```bash
 python get_env_vars.py --test -v
 ```
-
-## Command Line Options
-
-| Option | Description |
-|--------|-------------|
-| `-k, --kubeconfig` | Path to kubeconfig file |
-| `-c, --context` | Kubernetes context to use |
-| `-n, --namespace` | Target namespaces (space-separated) |
-| `-x, --exclude-namespace` | Namespaces to exclude |
-| `-o, --output` | Output directory (default: `env_vars_output`) |
-| `--consolidated` | One file per namespace instead of per-pod |
-| `-v, --verbose` | Increase verbosity (`-v` for INFO, `-vv` for DEBUG) |
-| `-q, --quiet` | Suppress output except errors |
-| `--no-color` | Disable colored output |
-| `--test` | Auto-increment output folder name |
-| `--shell-export` | Generate shell-style export files |
-| `-d, --docker` | Use Docker containers instead of Kubernetes |
 
 ## Classification Categories
 
