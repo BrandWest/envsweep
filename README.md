@@ -1,4 +1,4 @@
-# get_env_vars
+# EnvSweep
 
 A CLI tool to extract and classify environment variables from Kubernetes pods or Docker containers. It automatically categorizes secrets and generates vault-ready output files.
 
