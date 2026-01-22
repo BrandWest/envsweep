@@ -17,7 +17,7 @@ A CLI tool to extract and classify environment variables from Kubernetes pods or
 
 ## Requirements
 
-- Python 3.6+
+- Python 3.13
 - `kubectl` (for Kubernetes mode)
 - `docker` (for Docker mode)
 
